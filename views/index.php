@@ -51,7 +51,7 @@
         </div>
         <div class="col-lg-6">
           <h4>Localidades:</h4>
-          <p><a href="localidades/21">127.0.0.1/apimexico/localidades/id</a> puedes obtener el listado de localidades dependiendo del id del municipio </p>
+          <p><a href="localidades/1717">127.0.0.1/apimexico/localidades/id</a> puedes obtener el listado de localidades dependiendo del id del municipio </p>
         </div>
       </div>
 
