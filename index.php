@@ -15,6 +15,9 @@ $app->get('/','index');
 $app->get('/estados','getEstados');
 $app->get('/municipios/:id','getMunicipios');
 $app->get('/localidades/:id','getLocalidades');
+$app->get('/estadosC','getEstadosC');
+$app->get('/municipiosC/:id','getMunicipiosC');
+$app->get('/localidadesC/:id','getLocalidadesC');
 $app->run();
 function index(){
 	$app = \Slim\Slim::getInstance();
@@ -44,5 +47,30 @@ function getLocalidades($id){
 			$json.=$v->to_json().',';
 		$json='{"localidades": ' . substr($json,0,-1) . ']}';
 		echo $json;
+}
+function getEstadosC(){
+	$dta=array();
+	$all = Estado::all();
+		foreach($all as $k=>$v)
+			array_push($dta,$v->attributes());
+		$dta=array('estados'=>$dta);
+		echo RJson::pack($dta,true);
+}
+function getMunicipiosC($id){
+	$dta = array();
+	$all=Municipio::find('all',array('conditions'=>"estado_id = ".$id.""));
+		foreach($all as $k=>$v)
+			array_push($dta,$v->attributes());
+		$dta=array('municipios'=>$dta);
+		echo RJson::pack($dta,true);
+
+}
+function getLocalidadesC($id){
+	$dta=array();
+	$all=Localidade::find('all',array('conditions'=>"municipio_id = ".$id.""));
+		foreach($all as $k=>$v)
+			array_push($dta,$v->attributes());
+		$dta=array('localidades'=>$dta);
+		echo RJson::pack($dta,true);
 }
 ?>

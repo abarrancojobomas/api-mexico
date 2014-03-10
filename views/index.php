@@ -46,12 +46,15 @@
         <div class="col-lg-6">
           <h4>Estados:</h4>
           <p><a href="estados">127.0.0.1/apimexico/estados</a> puedes obtener listado de estados</p>
+          <p><a href="estadosC">127.0.0.1/apimexico/estadosC</a> puedes obtener listado de estados JSON reducido</p>
           <h4>Municipios:</h4>
           <p><a href="municipios/21">127.0.0.1/apimexico/municipios/id</a> puedes obtener el listado de municipios dependiendo del id de los estados </p>
+          <p><a href="municipiosC/21">127.0.0.1/apimexico/municipiosC/id</a> puedes obtener el listado de municipios dependiendo del id de los estados JSON reducido </p>
         </div>
         <div class="col-lg-6">
           <h4>Localidades:</h4>
           <p><a href="localidades/1717">127.0.0.1/apimexico/localidades/id</a> puedes obtener el listado de localidades dependiendo del id del municipio </p>
+          <p><a href="localidadesC/1717">127.0.0.1/apimexico/localidadesC/id</a> puedes obtener el listado de localidades dependiendo del id del municipio JSON reducido </p>
         </div>
       </div>
 
