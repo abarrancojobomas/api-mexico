@@ -5,7 +5,7 @@
  {
      $cfg->set_model_directory('models');
      $cfg->set_connections(array(
-         'development' => 'mysql://root:@localhost/mexico_estados;charset=utf8'));
+         'development' => 'mysql://root:1907@localhost/mexico_estados;charset=utf8'));
  });
 
 ?>

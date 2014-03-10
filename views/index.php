@@ -55,6 +55,10 @@
           <h4>Localidades:</h4>
           <p><a href="localidades/1717">127.0.0.1/apimexico/localidades/id</a> puedes obtener el listado de localidades dependiendo del id del municipio </p>
           <p><a href="localidadesC/1717">127.0.0.1/apimexico/localidadesC/id</a> puedes obtener el listado de localidades dependiendo del id del municipio JSON reducido </p>
+          <h4>Buscar:</h4>
+          <p><a href="buscar/p">127.0.0.1/apimexico/buscar/[estado a buscar]</a> puedes realizar una busqueda para encontar algun estado</p>
+          <p><a href="buscar/21/p">127.0.0.1/apimexico/buscar/(id estado)/[municipio a buscar]</a> puedes realizar una busqueda para encontrar algun municipio perteneciente al estado que corresponda en el id de estado </p>
+          <p><a href="buscar/21/1717/san">127.0.0.1/apimexico/buscar/(id estado)/(id de municipio)/[localidad a buscar]</a> puedes realizar una busqueda para encontrar alguna localidad perteneciente al estado que corresponda en el id de estado y municipio correspondiente en id de municipio </p>
         </div>
       </div>
 
